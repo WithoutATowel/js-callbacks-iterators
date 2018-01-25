@@ -1,10 +1,8 @@
 var people = ['Bob', 'Jen', 'James', 'Isolde'];
 
-// Your code here!
+function upperCaser(item) {
+	return item.toUpperCase();
+}
 
-// Write some code using map that takes the above array of objects, and turns the array elements to all caps
-
-// ex:
-// console.log(people);
-// > [ 'BOB', 'JEN', 'JAMES', 'ISOLDE' ]
-
+people = people.map(upperCaser);
+console.log(people);

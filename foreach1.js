@@ -5,7 +5,19 @@
  
 var foods = ["pizza", "tacos", "ice cream"];
 
-// your code here
+for(i in foods) {
+	console.log("I like", foods[i]);
+}
+
+foods.forEach(function(element) {
+	console.log("I like", element);
+});
+
+function myCallback(item) {
+	console.log("I like", item);
+}
+
+foods.forEach(myCallback);
 
 // The output should be
 // > "I like pizza"
